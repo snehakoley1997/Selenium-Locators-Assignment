@@ -1,0 +1,8 @@
+Link & Partial Link Text 
+Website: https://www.wikipedia.org/ 
+
+Click 'English' using LinkText. 
+driver.findElement(By.linkText("English")).click();
+
+ Click 'Privacy policy' using PartialLinkText. 
+driver.findElement(By.partialLinkText("Privacy Policy")).click();	
