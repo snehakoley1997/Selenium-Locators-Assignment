@@ -2,4 +2,9 @@ CSS Selectors
 Website: https://www.amazon.in/ 
 
 Search 'Laptop' using CSS ID → #twotabsearchtextbox. 
+driver.findElement(By.cssSelector("#twotabsearchtextbox")).sendKeys("Laptop");
 
+Click search button using CSS Attribute → input[value='Go']. 
+driver.findElement(By.cssSelector("[value='Go']")).click();
+
+Select the first product using nth-child CSS selector.
