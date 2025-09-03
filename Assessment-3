@@ -8,3 +8,4 @@ Click search button using CSS Attribute → input[value='Go'].
 driver.findElement(By.cssSelector("[value='Go']")).click();
 
 Select the first product using nth-child CSS selector.
+driver.findElement(By.cssSelector(".s-main-slot > div:nth-child(8) .puis-list-col-right a.a-link-normal.a-text-normal")).click();
