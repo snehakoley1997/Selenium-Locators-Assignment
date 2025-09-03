@@ -1,1 +1,13 @@
+Dynamic Elements 
+Website: https://www.irctc.co.in/ 
 
+ Select 'From' city using starts-with() in XPath. 
+driver.findElement(By.xpath("//input[starts-with(@aria-autocomplete, 'list') and contains(@aria-controls, 'pr_id_1_list')]")).sendKeys("KOLKATA - KOAA ");
+
+Select 'To' city using contains()
+driver.findElement(By.xpath("//input[contains(@aria-autocomplete,'list') and contains(@aria-controls,'pr_id_2_list')]")).sendKeys("JALPAIGURI - JPG ");
+
+
+
+		
+		
