@@ -4,5 +4,5 @@ Website: https://www.wikipedia.org/
 Click 'English' using LinkText. 
 driver.findElement(By.linkText("English\n7,041,000+ articles")).click();
 
- Click 'Privacy policy' using PartialLinkText. 
+Click 'Privacy policy' using PartialLinkText. 
 driver.findElement(By.partialLinkText("Privacy Policy")).click();	
