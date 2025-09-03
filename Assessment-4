@@ -18,3 +18,16 @@ ele.sendKeys("mobile");
 ele.sendKeys(Keys.ENTER);
 
 Apply filter (e.g., “4★ & above”) using XPath axes (following-sibling). 
+
+WebElement element= driver.findElement(By.xpath("//div[text()='Customer Ratings']"));
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0, 1000);");
+ 
+   // Click "Custpmer Rating" element using JS
+
+   js.executeScript("arguments[0].click();", element);
+
+		//Click "4★ & above" rating option from the list.
+
+		driver.findElement(By.xpath("//div[text()='4★ & above']/preceding-sibling::div")).click();
+ 
