@@ -1,1 +1,20 @@
+XPath Basics 
 
+Website: https://www.flipkart.com/ 
+
+Close login popup using XPath with text().
+
+driver.get("https://www.flipkart.com/");
+driver.findElement(By.xpath("//a[text()='Cart']")).click();
+driver.findElement(By.xpath("//a[text()='Login']")).click();
+Thread.sleep(1000);
+driver.findElement(By.xpath("//button[text()='✕']")).click();
+
+ Search for 'Mobiles' using XPath with contains(). 
+
+WebElement ele = driver.findElement(By.xpath("//input[contains(@class,'Pke_EE')]"));
+ele.click();
+ele.sendKeys("mobile");
+ele.sendKeys(Keys.ENTER);
+
+Apply filter (e.g., “4★ & above”) using XPath axes (following-sibling). 
