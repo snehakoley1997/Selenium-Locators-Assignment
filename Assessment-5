@@ -7,7 +7,11 @@ driver.findElement(By.xpath("//input[starts-with(@aria-autocomplete, 'list') and
 Select 'To' city using contains()
 driver.findElement(By.xpath("//input[contains(@aria-autocomplete,'list') and contains(@aria-controls,'pr_id_2_list')]")).sendKeys("JALPAIGURI - JPG ");
 
-
+Select journey date using XPath parent/child navigation.
+WebElement dateField = driver.findElement(By.xpath("//span[contains(@class, '-calendar')]"));
+dateField.click();
+ 
+driver.findElement(By.xpath("//td[@class='ng-tns-c59-10 ng-star-inserted']//child::a[normalize-space()='7']")).click();
 
 		
 		
