@@ -1,1 +1,18 @@
+Advanced Locators 
+Website: https://demoqa.com/elements 
+Expand 'Check Box' using CSS with multiple attributes. 
 
+driver.findElement(By.xpath("//span[text()='Check Box']")).click();
+JavascriptExecutor js = (JavascriptExecutor) driver;
+js.executeScript("window.scrollBy(0, 500);");
+Thread.sleep(1000);
+driver.findElement(By.cssSelector("#tree-node > ol > li > span > button > svg")).click();
+
+Select a checkbox using XPath with multiple conditions. 
+
+driver.findElement(By.xpath("//span[@class='rct-title' and text()='Desktop']/preceding-sibling::span[@class='rct-checkbox']")).click();
+if (textBox.isEnabled()) {
+   System.out.println("Text box is enabled");
+        } else {
+            System.out.println("Text box is disabled");
+        }
