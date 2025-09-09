@@ -11,7 +11,7 @@ Select journey date using XPath parent/child navigation.
 WebElement dateField = driver.findElement(By.xpath("//span[contains(@class, '-calendar')]"));
 dateField.click();
  
-driver.findElement(By.xpath("//td[@class='ng-tns-c59-10 ng-star-inserted']//child::a[normalize-space()='7']")).click();
+driver.findElement(By.xpath("//td[@class='ng-tns-c59-10 ng-star-inserted']//child::a[text()='16']")).click();
 
 		
 		
