@@ -10,7 +10,7 @@ Search/select a product.
 driver.findElement(By.xpath("//div[text()='Sauce Labs Backpack']")).click();
 
  Add product to cart. 
-	driver.findElement(By.id("add-to-cart-sauce-labs-backpack")).click();
+driver.findElement(By.xpath("//button[text()='Add to cart']")).click();
 
 	Proceed to checkout.
 driver.findElement(By.xpath("//button[text()='Checkout']")).click();
