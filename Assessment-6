@@ -9,8 +9,9 @@ Thread.sleep(1000);
 driver.findElement(By.cssSelector("#tree-node > ol > li > span > button > svg")).click();
 
 Select a checkbox using XPath with multiple conditions. 
-
 driver.findElement(By.xpath("//span[@class='rct-title' and text()='Desktop']/preceding-sibling::span[@class='rct-checkbox']")).click();
+
+Verify whether the text box element is enabled/disabled. 
 if (textBox.isEnabled()) {
    System.out.println("Text box is enabled");
         } else {
