@@ -1,1 +1,50 @@
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Test;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class AmazonTitel {
+	
+	WebDriver driver;
+	 
+	  @BeforeSuite
+	    public void beforeSuite() {
+	        System.out.println("Test Suite Started");
+
+	  }
+	 @BeforeMethod
+	 public void driverSetup() {
+		 WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://www.amazon.in/");
+		
+	 }
+	 
+	 @Test
+	 public void verifyTitle() {
+		String pagetitle = driver.getTitle();
+		System.out.println("Verified title is: "+ pagetitle);
+		}
+	 
+	 @AfterMethod
+	 public void Closedriver() {
+		 driver.quit();
+	 }
+	 
+	 @AfterSuite
+	 public void afterSutite() {
+		 System.out.println("Test Suite Successfully Completed");
+	 }
+	 }
+
+
+
+		
+	
